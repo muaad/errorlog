@@ -1,0 +1,15 @@
+%p#notice= notice
+
+%p
+  %b Title:
+  = @problem.title
+%p
+  %b Body:
+  = @problem.body
+%p
+  %b Source:
+  = @problem.source
+
+= link_to 'Edit', edit_problem_path(@problem)
+\|
+= link_to 'Back', problems_path
